@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inscribete aqui</title>
+    <link rel="icon" href="../0-img/Logo.jpg" type="image/"/>
+    <link rel="stylesheet" href="../mystyle.css" type="text/css"/>
+</head>
+<body>
+    <div>
+        <header>
+            <img src="../0-img/Logo_2.jpg" alt="Logo" width="200px"> <h1>Lavaderos de La Reina</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Ruta.html">Ruta</a></li>
+                <li><a href="Inscribete-aqui.html">Inscribete aquí</a></li>
+                <li><a href="Experiencias.html">Experiencias</a>
+                <ul><li>
+                    <a href="Galería.html">Galería</a>
+                </li></ul>
+                </li>
+                <li><a href="../index.html"><img src="../0-img/Español.jpg" alt="Español" width="40px"></a></li>
+                <li><a href="../2-Ingles/Sign-up-here.html"><img src="../0-img/Ingles.jpg" alt="Ingles" width="40px"></a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="sign-container">
+            <section class="firs-section">
+                <div>
+                    <h2>Inscribete aqui</h2>
+                    <p>La ruta tendría dos opciones:
+                        <ul>
+                            <li>Un autobus que llevaría hasta el inicio de la ruta más asesoramiento de la ruta con los puntos más interesantes y picnic:
+                                <ul>
+                                    <div>
+                                    <li>Grupo de 10 personas o menos: 20€/persona</li>
+                                    <li>Grupo de mas de 10 personas: 15€/persona</li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li>Sin autobus y ruta con asesoramiento y picnic:
+                                <ul>
+                                    <div>
+                                    <li>Grupo de 10 personas o menos: 18€/persona</li>
+                                    <li>Grupo de mas de 10 personas: 12€/persona</li>
+                                    </div>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </section>
+            <section class="secon-section">
+                <h3>Horario</h3>
+                <table>
+                  <caption>DISPONIBILIDAD</caption>                   
+                  <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Miercoles</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+                  <tr>
+                        <td>11:00 - 14:00</td>
+                        <td colspan="5">Inicio de ruta</td>
+                    </tr>
+                    <tr>
+                        <td>14:00 - 15:00</td>
+                        <td colspan="5">Comida</td>
+                    </tr>
+                    <tr>
+                        <td>15:00 - 18:00</td>
+                        <td colspan="5">Fin de ruta</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+                <section>
+                    <h3>Apuntate aquí!</h3>
+                    <p>¡Rellene este formulario para apuntarse a esta increible ruta!</p>
+                <div class="data">    
+                <form method="post" action="mailto:hervastravel@gmail.com">
+                    <!--"Post" enrypt the information -->
+                
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                    <div>
+                        <label>Nombre</label><input class="box" type="text" name="name" pattern="[A-Za-zÑñáéíóúüÁÉÍÓÚ ]+"/>
+                    </div>
+                    <div>
+                        <label>Apellido</label><input class="box" type="text" name="last name"/>
+                    </div>
+                    <div>
+                        <label>Correo electrónico</label><input class="box" type="email" name="location"/>
+                    </div>
+                    <div>
+                        <label>Teléfono</label><input class="box" type="tel" name="phone" size="9" maxlength="9"/>
+                    </div>
+                        <!--Input tiene que estar fuera de label-->
+                        <!--Usamos <div></div> para separar las etiquetas-->
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>Opción de ruta</legend>
+                    <div class="input-container">
+                        <label><input class="option"type="radio" name="delivery" value="pick"/>Con autobús</label>
+                    </div>
+                    <div class="input-container">
+                        <label><input class="option" type="radio" name="delivery" value="deliver"/>Sin autobús</label>
+                    </div>
+                    
+                        <p>Número de acompañantes(25 máximo)<input type="number" min="0" max="25"></p>
+                        <p>Día<input type="date"></p>
+                    </fieldset>
+
+                    <fieldset>
+                    <legend>Donde quieres que te enviemos información</legend>
+                    <div class="input-container">
+                        <label><input class="option" type="checkbox" id="offers1" name="Home_offers" value="Yes" checked="checked"/>Correo electrónico</label>
+                    </div>
+                    <div class="input-container">
+                        <label> <input class="option" type="checkbox" id="offers2" name="Email_offers" value="Yes" checked="checked"/> Teléfono</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Enfermedades que tengas (cardiovasculares..) para tener en cuenta:</legend>
+                    <textarea name="suggestion" rows="4" cols="40" placeholder="Escribe aquí"></textarea>
+                    <!--Importante no dejar espacio entre textarea para que aparezca el texto que escribimos en el placeholder-->
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar">
+                </form>
+                </div>
+                </section>
+        </main>
+        <footer>
+            <div>
+                <h3>Contacto</h3>
+                <p><a href="mailto:hervastravel@gmail.com">hervastravel@gmail.com</a></p>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <a href="https://www.instagram.com/hervastravel/" target="_blank"><img src="../0-img/Instagram.png" alt="Instagram" width="40px"></a>
+                    </div>
+            </div>
+            <div class="creativecommons">
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img src="../0-img/Commons-license.jpg" alt="Licencia" width="200" height="60"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
